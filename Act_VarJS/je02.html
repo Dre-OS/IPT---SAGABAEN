@@ -7,9 +7,306 @@
     <script type="text/javascript">
         document.write("<h2> Manipulating Variables</h2>")
 
-        //
+        //Variable declared an manipulated
+        var a;
+        var myvar;
+
+        a = 10;
+        myvar = "I am a variable!";
+
+        var b = 5;
+        var mytxt = "I am a text!";
+        
+        // Display values of variables
+        document.write("The value of variable <b>a</b> is " + a);
+        document.write("<br />");
+        document.write("The value of variable <b>myvar</b> is " + myvar);
+        document.write("<br />");
+        document.write("The value of variable <b>b</b> is " + b);
+        document.write("<br />");
+        document.write("The value of variable <b>mytxt</b> is " + mytxt);
+        document.write("<br />");
+        /* document.write("The value of variable <b></b>");
+        document.write("<br />");
+        document.write("The value of variable <b></b>");
+        document.write("<br />");
+        document.write("The value of variable <b></b>");
+        document.write("<br />");
+        document.write("The value of variable <b></b>");
+        document.write("<br />");
+        document.write("The value of variable <b></b>");
+        document.write("<br />"); */
+        document.write("<h2>Manipulating Operators</h2>");
+        // Using the same variables  above lets try to mix it with
+        // the javascript operators
+
+        // Assignment operator
+        document.write("<h3>Assignment Operators</h3>");
+        document.write("Assigning value using the equal sign (=):");
+        document.write("<br />");
+        myvar = mytxt;
+        document.write("Assigning the mytxt to myvar (amyvar=mytxt):");
+        document.write("<br />");
+        document.write("The value of myvar=" + myvar);
+        document.write("<br /><br />");
+
+        // Incrementing and Decrementing Operators
+        document.write("<h3>Incrementing and Decrementing Operators</h3>");
+        document.write("Incrementing a variable with a value, plus equal (+=):");
+        document.write("<br />");
+        
+        var a = 10; //Redeclaring variables a and b
+        var b = 5;
+        a+=b;
+        document.write("Incrementing a with this formula (a+=b):");
+        document.write("<br />");
+        document.write("the value of a="+a);
+        document.write("<br /><br />");
+        document.write("<br />");
+        document.write("Decrementing a variable with a value, dash equal (-=):");
+        document.write("<br />");
+
+        var a = 10; //Redeclaring variables a and b
+        var b = 5;
+        a-=b;
+        document.write("Decrementing a with this formula (a-=b):");
+        document.write("<br />");
+        document.write("the value of a="+a);
+        document.write("<br /><br />");
+
+        // Multiplication and Division Operators
+        document.write("<h3>Multiplication and Division Operators</h3>");
+        document.write("Multiplying a variable with a value, asterisk equal (*=)");
+        document.write("<br />");
+        
+        var a = 10; //Redeclaring variables a and b
+        var b = 5;
+        a*=b;
+        
+        document.write("Multiplying a with this formula (a*=b):");
+        document.write("<br />");
+        document.write("the value of a="+a);
+        document.write("<br /><br />");
+        
+        document.write("Dividing a variable with a value, slash equal (/=)");
+        document.write("<br />");
+        
+        var a = 10; //Redeclaring variables a and b
+        var b = 5;
+        a/=b;
+        
+        document.write("Dividing a with this formula (a/=b):");
+        document.write("<br />");
+        document.write("the value of a="+a);
+        document.write("<br /><br />");
+
+        // Remainder Operator
+        document.write("<h3>Remainder Operators</h3>");
+        document.write("Getting the remainder of a variable with a value, " + "percent equal (%=)");
+        document.write("<br />");
+
+        var a = 10; //Redeclaring variables a and b
+        var b = 5;
+        a%=b;
+        
+        document.write("Getting the remainder a with this formula (a%=b):");
+        document.write("<br />");
+        document.write("the value of a="+a);
+        document.write("<br /><br />");
+
+        // String Concatenation
+        document.write("<h3>String Concatenation</h3>");
+        document.write("<h3>Concatenating a String</h3>");
+        document.write("Concatenate a String using a plus sign (+)");
+        document.write("<br />");
+
+        var text1="World";
+        var text2="Wide";
+        var text3="Web";
+        var text4;
+        var text4 = text1 + text2 + text3;
+
+        document.write("Concatenating text4 = text1 + text2 + text3;");
+        document.write("<br />");
+        document.write("the value of text4="+text4);
+        document.write("<br /><br />");
+
+        var text4 = "The "+text1+"-"+text2+"-"+ text3;
+        document.write('Concatenating text4 = "The "+text1+"-"+text2+"-"+ text3;');
+        document.write("<br />");
+        document.write("the value of text4="+text4);
+        document.write("<br /><br />");
+
+        document.write("<h3>Mixing Number and Strings</h3>");
+        var text='1';
+        var num=1;
+        var result;
+        document.write("Mixing text= '1' and num = 1");
+        document.write("<br />");
+        var result = text +num;
+        document.write("Mixing result= text +num");
+        document.write("<br />");
+        document.write("the value of result="+result);
+        document.write("<br /><br />");
+        var result = num+text;
+        document.write("Mixing result= num+text");
+        document.write("<br />");
+        document.write("the value of result="+result);
+        document.write("<br /><br />");
+        var result = text+text;
+        document.write("Mixing result= text+text");
+        document.write("<br />");
+        document.write("the value of result="+result);
+        document.write("<br /><br />");
+        var result = num+num;
+        document.write("Mixing result= num+num");
+        document.write("<br />");
+        document.write("the value of result="+result);
+        document.write("<br /><br />");
+        
+        // Comparison Operators
+        document.write("<h3>Comparison Operators</h3>");
+        document.write("<h3>Comparison Operators</h3>");
+        document.write("Equal: ");
+        document.write("<br />");
+
+        var a=5;
+        var r;
+        r=(a==5)?"true":"false";
+        document.write("if a=5 and the condition is (a == 5) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var b ="5";
+        r=(a==b)?"true":"false";
+        document.write("if a=5 and b='5' and the condition is (a == b) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var c = 4;
+        r=(a==c)?"true":"false";
+        document.write("if a=5 and c=5 and the condition is (a == c) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var d = 6;
+        r=(a==d)?"true":"false";
+        document.write("if a=5 and d=6 and the condition is (a == d) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var a = 5;
+        r=(a===5)?"true":"false";
+        document.write("if a=5 and the condition is (a == d) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var b = "5";
+        r=(a===b)?"true":"false";
+        document.write("if a=5 and b='5' and the condition is (a === b) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var c = 4;
+        r=(a===c)?"true":"false";
+        document.write("if a=5 and c=4 and the condition is (a===c) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var d = 6;
+        r=(a===d)?"true":"false";
+        document.write("if a=5 and d=6 and the condition is (a === d) the result is");
+        document.write(r);
+        document.write("<br />");
+
+
+        // Not equal
+        document.write("Not Equal:");
+        document.write("<br />")
+        var a=5;
+        var r;
+        r=(a!=5)?"true":"false";
+        document.write("if a=5 and the condition is (a != 5) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var b ="5";
+        r=(a!=b)?"true":"false";
+        document.write("if a=5 and b='5' and the condition is (a != b) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var c = 4;
+        r=(a!=c)?"true":"false";
+        document.write("if a=5 and c=5 and the condition is (a != c) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var d = 6;
+        r=(a!=d)?"true":"false";
+        document.write("if a=5 and d=6 and the condition is (a != d) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        // Greater Than
+        document.write("Greater than");
+        document.write("<br />")
+        var a=5;
+        var r;
+        r=(a>5)?"true":"false";
+        document.write("if a=5 and the condition is (a > 5) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var b ="5";
+        r=(a>b)?"true":"false";
+        document.write("if a=5 and b='5' and the condition is (a > b) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var c = 4;
+        r=(a>c)?"true":"false";
+        document.write("if a=5 and c=5 and the condition is (a > c) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var d = 6;
+        r=(a>d)?"true":"false";
+        document.write("if a=5 and d=6 and the condition is (a > d) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        // Lesser than
+        document.write("Lesser than:");
+        document.write("<br />")
+        var a=5;
+        var r;
+        r=(a<5)?"true":"false";
+        document.write("if a=5 and the condition is (a < 5) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var b ="5";
+        r=(a<b)?"true":"false";
+        document.write("if a=5 and b='5' and the condition is (a < b) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var c = 4;
+        r=(a<c)?"true":"false";
+        document.write("if a=5 and c=5 and the condition is (a < c) the result is");
+        document.write(r);
+        document.write("<br />");
+
+        var d = 6;
+        r=(a<d)?"true":"false";
+        document.write("if a=5 and d=6 and the condition is (a < d) the result is");
+        document.write(r);
+        document.write("<br />");
+        
         
     </script>
+    
 </head>
 <body>
     
