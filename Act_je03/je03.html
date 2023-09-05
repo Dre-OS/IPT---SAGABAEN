@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hendre Leigh O. Sagabaen">
+    <title>JavaScript Activity 03</title>
+    <script type="text/javascript">
+        var exit = false;
+        var tryAgain;
+        var attendees= new Array();
+        var i=0;
+        document.write("List of eligible attendees: <br/>");
+        do 
+        {
+            var age = 0;
+            var name;
+            age = prompt("Enter your age: ");
+            if (age >= 18) 
+            {
+                alert("you are eligible to attend.")
+                name = prompt("Enter your name: ");
+                alert("Thank you, " + name +"! You have been added to the list of attendees");
+                attendees.push(name);
+            }
+            tryAgain = prompt("would you like to try again (Y/N)")
+            if (tryAgain == "N" || tryAgain == "n" ) 
+            {
+                exit = true;
+            }
+            document.write(i+1+". "+attendees[i] + "<br/>");
+            i++;
+        } 
+        while (exit == false);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
