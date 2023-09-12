@@ -7,6 +7,7 @@
     <script type="text/javascript">
         var num1 = 40;
         var num2 = 2;
+        // basic function 
         function myFunction () 
         {
             document.write(num1 + num2);
@@ -18,15 +19,28 @@
             return sum;
         }
         myFunction();
+        document.write("<br/>");
         var x = 10;
         var y = 32;
         document.write(getSum(x,y));
-        function doSomething(params) {
+        document.write("<br/>");
+        function doSomething(params) 
+        {
             alert("Hello!");
+        }
+        function promptInput(){
+            var x = prompt("Enter First Num: ");
+            var y = prompt("Enter Second Num: ");
+            num1 = parseInt(x);
+            num2 = parseInt(y);
+            var sum = getSum(num1,num2);
+            document.write(sum);
+            return sum;
         }
     </script>
 </head>
 <body>
-    <button type="button" onclick="doSomething()">Click this bruh</button>
+    <button type="button" onclick="doSomething()">Click this bruh</button><br>
+    <button type="button" onclick="promptInput()">Start Calc</button>
 </body>
 </html>
