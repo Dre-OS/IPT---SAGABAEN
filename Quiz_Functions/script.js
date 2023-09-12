@@ -20,7 +20,7 @@ function calculateAge()
 }
 function temperatureChecker() 
 {
-    var temperature = prompt("Input the temperature in celsius:")
+    var temperature = prompt("Input the temperature today in celsius:")
     if (temperature > 30) 
     {
         document.write("hot weather " + date.getDay()+"/" + date.getMonth() + "/" + date.getFullYear()+" "+ date.getHours()+":"+ date.getMinutes());
