@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hendre Leigh O. Sagabaen">
+    <title>DOM Manipulation Activity</title>
+    <script type="text/javascript">
+        function changedContent() {
+            var element = document.getElementById("content");
+            element.innerHTML = "<p>New content added using innerHTML.</p>";
+        }
+        function changeListItems() {
+            var listItems = document.getElementsByTagName("li");
+
+            for (let i = 0; i < listItems.length; i++) {
+                listItems[i].innerHTML = "New Item " + (i + 1);
+                
+            }
+        }
+        function addParagraph() {
+            var newParagraph = document.createElement("p");
+            newParagraph.innerHTML = "this is a dynamically added paragraph."
+            document.body.appendChild(newParagraph);
+        }
+    </script>
+</head>
+<body>
+    <h1> DOM Manipulationw Activity</h1>
+    <div id="content">
+        <p>This a paragraph</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div>
+        <button onclick="changedContent()">Change Content</button>
+        <button onclick="changeListItems()">Change list Items</button>
+        <button onclick="addParagraph()">Add Paragraph</button>
+    </div>
+</body>
+</html>
