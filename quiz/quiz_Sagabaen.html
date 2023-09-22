@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hendre Leigh O. Sagabaen">
+    <title>Document</title>
+    <script type="text/javascript">
+        var word="";
+        var modword;
+        function inputString() 
+        {
+            word = prompt("input word/s").toLowerCase();
+            var wordLetters = word.split("");
+            for (let i = 0; i < wordLetters.length; i++) 
+            {
+                switch (wordLetters[i]) 
+                {
+                    case ".":
+                        wordLetters[i] = "";
+                        break;
+                    case ",":
+                        wordLetters[i] = "";
+                        break;
+                    case "?":
+                        wordLetters[i] = "";
+                        break;
+                    case "!":
+                        wordLetters[i] = "";
+                        break;
+                    default:
+                        break;
+                }
+                if (i+1 == wordLetters.length) 
+                {
+                    modword = wordLetters.join("");
+                }
+            } 
+        }
+        function isPalindrome() 
+        {
+            inputString();
+            var confirm = false;
+            var equalLetters = 0;
+            var modwordLetters= modword.split("");
+            var j = modwordLetters.length
+            for (let i = 0; i < modwordLetters.length/2; i++) 
+            {
+                
+                var letter1 = modwordLetters[i];
+                j = j-1;
+                var letter2 = modwordLetters[j];
+                if (letter1 == letter2) 
+                {
+                    equalLetters++;
+                    continue;
+                } 
+            }
+            if (equalLetters == modwordLetters.length/2) 
+            {
+                confirm = true;
+            }
+            else if (equalLetters < modwordLetters.length/2) 
+            {
+                confirm = false;
+            }
+            displayIsPalindrome();
+            function displayIsPalindrome() 
+            {
+                if (confirm == true) 
+                {
+                    alert("this is a palindrome");
+                }
+                else
+                {
+                        alert("this is not a palindrome");
+
+                }
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <button type="button" onclick="isPalindrome()">check palindrome</button>
+</body>
+</html>
